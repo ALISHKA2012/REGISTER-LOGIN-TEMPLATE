@@ -14,8 +14,8 @@ let DomManager = {
      
 
        image_phone.src = `./img/${product.photo}`;
-       image_phone.width = 2000;
-       image_phone.height =500;
+       image_phone.width = 200;
+       image_phone.height =200;
 
        
 
