@@ -42,18 +42,8 @@ document.addEventListener("DOMContentLoaded",function () {
        let phone_container = DomManager.createProductContainer(phone);
         table_products.appendChild(phone_container);
     }
-   if (localStorage["count"]){
-        document.getElementById("counter").innerHTML = parseInt(localStorage.count); 
-   }   
-   else{
-       localStorage.count = 0;
-    }
-   document.getElementById("btn-reset").addEventListener("click", function () {
-       if (localStorage.count) {
-        localStorage.count = 0;
-          document.getElementById("counter").innerHTML = 0;
-       }
-   });
+
+   
 
    }   );
 

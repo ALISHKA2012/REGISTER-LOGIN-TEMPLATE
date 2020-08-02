@@ -6,6 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web page</title>
+</head>
+<body style="background-color: grey;">
+
+    <h1 id="welcome"></h1>
+
+    <div style="border: 100px slateblue solid;">
+    <h1 id="user_info"></h1>
+    </div>
+    <script >
+        let user_email = sessionStorage.getItem("email");
+        let user_name = sessionStorage.getItem("name");
+        let user_age = sessionStorage.getItem("age");
+        let user_surname = sessionStorage.getItem("surname");
+        let user_passw = sessionStorage.getItem("passw");
+
+        
+ 
+     
+        document.getElementById("welcome").innerHTML = "WELCOME, dear user! " + user_name, user_surname;
+        document.getElementById("user_info").innerHTML = "<b>" +"User: " + "<b>" + user_name   + "<br>" + "<b>" + "Age is " + user_age + "<br>" + "Surname: "  + user_surname   + "<br>" + "Email: " + user_email + "<br>" + "passw: " + user_passw;
+      
+
+    </script>
+</body>
+</html>
 </body>
 </html>
